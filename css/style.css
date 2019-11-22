@@ -1,0 +1,145 @@
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+
+/*Base styles*/
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  min-width: 320px;  
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+
+  font-size: 108px;
+  line-height: 108px;
+
+  text-align: center;
+  letter-spacing: -5px;
+  color: #FF9DAF;
+}
+
+h2 {
+ margin: 0;
+ margin-top: 100px;
+ padding: 0;
+
+ font-size: 72px;
+ line-height: 82px;
+
+ text-align: center;
+ letter-spacing: -3px;
+ color: #000000;
+}
+
+h3 {
+  margin: 40px;
+  padding: 0;
+
+  font-size: 36px;
+  line-height: 54px;
+  letter-spacing: -1px;
+  color: #FFFFFF;
+}
+
+p {
+  margin: 0;
+  margin-top: 25px; 
+  padding: 0;  
+
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.nav .nav-link {
+  margin-right: 15px;
+  padding: 6px 13px;
+
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.2px;
+  color: rgba(255, 255, 255, 0.5);
+
+  border-radius: 5px;
+  cursor: pointer;  
+}
+
+.nav .nav-link-last {
+  margin-right: 0;
+
+  color: #FFFFFF;
+  background-color: #6AC75A;
+}
+
+.nav {
+  padding: 24px 24px 0 30px;
+}
+
+.jumbotron {
+  height: 100vh;
+
+  background-color: #372E6C;
+  
+  border-radius: 0;
+}
+
+
+@media screen and (max-width: 575px) {
+  .nav  {
+    flex-direction: column;
+
+    padding: 15px 50px;
+  }
+
+  .nav .nav-link {
+    margin-right: 0;
+  }
+
+  .nav-item {
+    margin-left: 0 !important;
+  } 
+}
