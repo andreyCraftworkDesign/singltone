@@ -115,7 +115,8 @@ strong {
 .jumbotron {
   margin: 0;
   height: 100vh;
-  min-height: 900px;
+  overflow: hidden;
+  /*min-height: 900px;*/
 
 
   background-color: #372E6C;
@@ -127,7 +128,15 @@ strong {
 }
 
 /*header-buttons*/
-.buttons a {
+
+.header-buttons {
+  margin-top: 59px;
+}
+
+.header-buttons .btn {
+  padding: 15px 17px;
+  max-width: 176px;
+
   font-family: "Poppins", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -137,17 +146,18 @@ strong {
   text-align: center;
   letter-spacing: -0.4px;
   color: #FFFFFF;
+  border-radius: 5px;
 }
 
-.buttons a:hover {
+.header-buttons .btn:hover {
   color: #FFFFFF;
 }
 
-.buttons .btn-orange {
+.header-buttons .btn-orange {
   background-color: #FF6838
 }
 
-.buttons .btn-grey {
+.header-buttons .btn-grey {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -160,26 +170,30 @@ strong {
   padding: 0;
 
   font-family: "Poppins", Arial, sans-serif;
-  font-size: 90px;
-  line-height: 90px;
-  font-weight: 400;
-  text-align: center;
-  letter-spacing: -5px;
-  color: #FF9DAF;
+  font-size: 100px;
+  line-height: 95px;
 }
 
 h1 span {
   font-family: "Merriweather", Arial, sans-serif;
-  font-size: 90px;
-  line-height: 90px;
-  font-weight: 300;
-  font-style: italic;
-  letter-spacing: -5px;
-  color: #FFD850;
+  font-size: 100px;
+  line-height: 95px;
 }
 
 .header-container {
-  margin-top: 70px;
+  margin-top: 60px;
+}
+
+.header-buttons {
+  margin-top: 40px;
+}
+
+.header-buttons .btn {
+  padding: 12px 9px;
+  max-width: 160px;
+
+  font-size: 17px;
+  line-height: 25px;
 }
 
 }
@@ -202,6 +216,10 @@ h1 span {
     margin-top: 70px;
   }
 
+  .header-buttons .btn {
+    max-width: 140px;
+  }
+
 }
 
 @media screen and (max-width: 991px) {
@@ -214,6 +232,10 @@ h1 span {
   h1 span {
     font-size: 70px;
     line-height: 70px;
+  }
+
+  .header-buttons .btn {
+    max-width: 130px;
   }
 
 }
@@ -231,8 +253,18 @@ h1 span {
   line-height: 65px;
 }
 
-.header-container {
-  margin-top: 50px;
+.header-buttons {
+  flex-direction: column;
+}
+
+.header-buttons .btn {
+  max-width: 100%;
+
+  padding: 12px 9px;
+}
+
+.header-buttons .btn:nth-child(2) {
+  margin-top: 15px;
 }
 
 
@@ -273,6 +305,14 @@ h1 span {
 
   .nav-item {
     margin-left: 0 !important;
+  }
+
+  .header-buttons {
+    padding: 0 50px !important;
+  }
+
+  .header-container {
+    margin-top: 25px;
   }
 
 }
