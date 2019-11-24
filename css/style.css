@@ -115,10 +115,9 @@ strong {
 .jumbotron {
   margin: 0;
   height: 100vh;
-  overflow: hidden;
+
+  position: relative;
   /*min-height: 900px;*/
-
-
   background-color: #372E6C;
   border-radius: 0;
 }
@@ -159,6 +158,25 @@ strong {
 
 .header-buttons .btn-grey {
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.scroll-link {
+  display: block;
+  position: absolute;
+
+  width: 22px;
+  height: 13px;
+
+  bottom: 20px;
+  left: 50%;
+
+  margin-left: -11px;
+
+  background-image: url("../img/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  font-size: 0;
 }
 
 /*VIEWPORTS*/
