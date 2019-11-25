@@ -85,6 +85,16 @@ strong {
   color: #FFFFFF;
 }
 
+h3 {
+  font-family: "Poppins", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 54px;
+  letter-spacing: -1px;
+  color: #FFFFFF;
+}
+
 
 .nav .nav-link {
   margin-right: 15px;
@@ -120,6 +130,8 @@ strong {
   /*min-height: 900px;*/
   background-color: #372E6C;
   border-radius: 0;
+
+  overflow: hidden;
 }
 
 .header-container {
@@ -178,6 +190,47 @@ strong {
 
   font-size: 0;
 }
+
+/*main*/
+/*promo*/
+
+.promo {
+  width: 100%;
+}
+
+.promo .inner {
+  width: 50%;
+  position: relative;
+
+  overflow: hidden;
+}
+
+.inner-dark {
+  background-color: #000000;
+}
+
+.inner-white {
+  background-color: #ffffff;
+}
+
+.promo .inner img {
+  width: auto;
+}
+
+.promo .inner h3 {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.inner-white h3 {
+  color: #000000;
+}
+
+.inner-dark h3 {
+  color: #FFFFFF;
+}
+
 
 /*VIEWPORTS*/
 
@@ -252,6 +305,11 @@ h1 span {
     line-height: 70px;
   }
 
+  h3 {
+    font-size: 32px;
+    line-height: 50px;
+  }
+
   .header-buttons .btn {
     max-width: 130px;
   }
@@ -271,6 +329,11 @@ h1 span {
   line-height: 65px;
 }
 
+.promo .inner h3 {
+  top: 30px;
+  left: auto;
+}
+
 .header-buttons {
   flex-direction: column;
 }
@@ -283,6 +346,21 @@ h1 span {
 
 .header-buttons .btn:nth-child(2) {
   margin-top: 15px;
+}
+
+.promo {
+  flex-direction: column;
+}
+
+.promo .inner {
+  display: flex;
+  justify-content: center;
+
+  width: auto;
+}
+
+.promo .inner img {
+  width: 600px;
 }
 
 
@@ -311,6 +389,11 @@ h1 span {
     line-height: 55px;
   }
 
+  h3 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
   .nav  {
     flex-direction: column;
 
@@ -331,6 +414,10 @@ h1 span {
 
   .header-container {
     margin-top: 25px;
+  }
+
+  .promo .inner h3 {
+
   }
 
 }
@@ -365,6 +452,11 @@ h1 span {
 h1 span {
   font-size: 45px;
   line-height: 45px;
+}
+
+h3 {
+  font-size: 25px;
+  line-height: 40px;
 }
 
 }
