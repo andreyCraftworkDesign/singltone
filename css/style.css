@@ -622,6 +622,7 @@ header .navbar-toggler {
 
 .subscribe {
   padding-top: 450px;
+  padding-bottom: 85px;
 }
 
 .subscribe .form-row {
@@ -765,6 +766,16 @@ h1 span {
 .board .btn {
   padding: 15px 21px;
   font-size: 18px;
+}
+
+.subscribe .large-article {
+  font-size: 42px;
+  line-height: 50px;
+}
+
+.subscribe {
+  padding-top: 420px;
+  padding-bottom: 70px;
 }
 
 }
@@ -979,6 +990,14 @@ h2 {
   padding: 0;
 }
 
+.subscribe {
+    padding-top: 300px;
+}
+
+.subscribe .form-control {
+  margin-bottom: 20px;
+}
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -1051,6 +1070,12 @@ h2 {
 
     background-position-y: -100px;
   }
+
+  .subscribe .large-article {
+    font-size: 33px;
+    line-height: 43px;
+  }
+
 }
 
 @media screen and (max-width: 510px) {
