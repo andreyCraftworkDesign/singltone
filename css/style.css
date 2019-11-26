@@ -300,6 +300,10 @@ header {
 
 /*advantages*/
 
+.advantages {
+  padding-bottom: 370px;
+}
+
 .advantages img {
   width: auto;
 }
@@ -346,6 +350,30 @@ header {
  background-color: #6AC75A;
  border-radius: 5px;
 }
+
+/*customization*/
+.customization {
+  background-color: #783BFF;
+}
+
+.customization p {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.customization .large-img {
+  margin-top: -270px;
+}
+
+.customization .small-img {
+  margin-top: 80px;
+  margin-bottom: -128px;
+}
+
+.test {
+  background-color: white;
+  height: 800px;
+}
+
 
 
 /*VIEWPORTS*/
@@ -412,6 +440,14 @@ h1 span {
   line-height: 31px;
 }
 
+.customization .large-img {
+  margin-top: -200px;
+}
+
+.customization .small-img {
+  margin-bottom: -100px;
+}
+
 }
 
 @media screen and (max-width: 991px) {
@@ -456,6 +492,18 @@ h3 {
 
 .row-list {
   padding-top: 40px;
+}
+
+.advantages {
+  padding-bottom: 320px;
+}
+
+.small-img .col-md-6 {
+  margin-bottom: 30px;
+}
+
+.small-img .col-md-6:nth-last-child(-n+2) {
+  margin-bottom: 0;
 }
 
 }
@@ -518,6 +566,18 @@ h2 {
 
 .promo .inner h3 {
   top: 10px;
+}
+
+.advantages {
+  padding-bottom: 250px;
+}
+
+.customization .large-img {
+  margin-top: -100px;
+}
+
+.customization .small-img {
+  margin-top: 60px;
 }
 
 }
@@ -596,6 +656,18 @@ h2 {
   .header-buttons .btn:nth-child(2) {
     margin-top: 5px;
   }
+
+  .advantages {
+    padding-bottom: 120px;
+  }
+
+  .customization .large-img {
+    margin-top: 0;
+  }
+
+  .customization .small-img {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 576px) {
@@ -610,6 +682,10 @@ h2 {
     font-size: 40px;
     line-height: 50px;
     letter-spacing: -2px;
+  }
+
+  .customization .small-img {
+    margin-top: 40px;
   }
 
 
