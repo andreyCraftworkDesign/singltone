@@ -282,7 +282,7 @@ header .navbar-toggler {
   display: flex;
   align-items: center;
   justify-content: center;
- */
+  */
   width: 50%;
   height: 700px;
   position: relative;
@@ -456,9 +456,14 @@ header .navbar-toggler {
   letter-spacing: -0.4px;
 }
 
-.board  .plans > .plan {
+.board  .plans > .plan .content {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+}
+
+.board .plans {
+  margin-top: 58px;
+  margin-bottom: 100px;
 }
 
 .board .first-plan {
@@ -482,7 +487,6 @@ header .navbar-toggler {
   min-height: 570px;
 
   padding: 0 30px;
-  padding-bottom: 25px;
 }
 
 .board .plan-wrapper {
@@ -494,10 +498,14 @@ header .navbar-toggler {
 
 .board .list-group {
   padding-top: 31px;
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .board .list-group-item {
-  padding: 0 35px;
+  padding: 0 20px;
   padding-bottom: 15px;
 
   position: relative;
@@ -516,14 +524,25 @@ header .navbar-toggler {
 .board .list-group-item:before {
   content: '';
   position: absolute;
-  top: 8px;
-  left: 10px;
+  top: 4px;
+  left: 2px;
 
   width: 14px;
   height: 12px;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("../img/ok.svg");
+}
+
+.board .plans .content {
+  min-width: 350px;
+  padding: 0 25px;
+  padding-bottom: 25px;
+  height: 100%;
+}
+
+.board .plans .col-lg-8 .content {
+  min-width: 365px;
 }
 
 .board .btn {
@@ -874,7 +893,7 @@ h2 {
   .header-buttons {
     flex-direction: column;
     align-items: center;
-}
+  }
 
   .header-buttons .btn {
     max-width: 100% !important;
@@ -909,27 +928,27 @@ h2 {
 
 @media screen and (max-width: 425px) {
 
-   h1 {
-    font-size: 35px;
-    line-height: 35px;
-    letter-spacing: -1px;
-  }
+ h1 {
+  font-size: 35px;
+  line-height: 35px;
+  letter-spacing: -1px;
+}
 
 
-  h1 span {
-    font-size: 35px;
-    line-height: 35px;
-    letter-spacing: -1px;
-  }
+h1 span {
+  font-size: 35px;
+  line-height: 35px;
+  letter-spacing: -1px;
+}
 
-  .row-list .row-item {
-    padding: 0 10px !important;
-  }
+.row-list .row-item {
+  padding: 0 10px !important;
+}
 
-  .advantages strong {
-    font-size: 18px;
-    line-height: 31px;
-  }
+.advantages strong {
+  font-size: 18px;
+  line-height: 31px;
+}
 
 }
 
