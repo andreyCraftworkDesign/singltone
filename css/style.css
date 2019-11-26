@@ -569,7 +569,54 @@ header .navbar-toggler {
   color: #FFFFFF;
 }
 
+/*bonus pack*/
 
+.bonus-pack {
+  background-color: #000000;
+}
+
+.bonus-pack p {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.bonus-pack img {
+  width: 100%;
+  height: auto;
+}
+
+.bonus-pack .content {
+  padding-top: 100px;
+
+  flex-direction: column;
+}
+
+.bonus-pack h2 {
+  margin-top: 60px;
+}
+
+.bonus-pack .large-img {
+  margin-top: 80px;
+  margin-bottom: -260px;
+}
+
+.bonus-pack .col-lg-8 {
+  max-width: 870px;
+}
+
+.bonus-pack  .btn {
+  padding: 15px 24px 15px 23px;
+  margin-top: 80px;
+  font-family: "Poppins", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: -0.4px;
+  color: #FFFFFF;
+  background-color: #6AC75A;
+  border-radius: 5px;
+}
 
 /*VIEWPORTS*/
 
@@ -787,6 +834,10 @@ header .navbar-nav {
   max-width: 590px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+}
+
+.bonus-pack .large-img {
+  margin-bottom: -100px;
 }
 
 }
