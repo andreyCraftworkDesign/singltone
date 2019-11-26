@@ -120,6 +120,17 @@ h3 {
   color: #FFFFFF;
 }
 
+h4 {
+  font-family: "Poppins", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: -0.8px;
+  color: #000000;
+}
+
 p {
   font-family: "Poppins", Arial, sans-serif;
   font-style: normal;
@@ -129,7 +140,6 @@ p {
   letter-spacing: -0.2px;
   color: rgba(0, 0, 0, 0.5);
 }
-
 
 .nav .nav-link {
   margin-right: 15px;
@@ -176,10 +186,6 @@ header {
  position: absolute;
  top: 0;
  width: 100%;
-}
-
-.header-container {
-
 }
 
 /*header-buttons*/
@@ -369,9 +375,68 @@ header {
   margin-bottom: -128px;
 }
 
-.test {
-  background-color: white;
-  height: 800px;
+/*layouts*/
+.layouts {
+  min-height: 1820px;
+
+  background-image: url("../img/large-bg.png");
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-position: center;
+  background-position-y: 50px;
+  background-color: #E8E5EF
+}
+
+/*board*/
+
+.board .price {
+  width: 100%;
+  padding: 19px 0;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 72px;
+  text-align: center;
+
+  letter-spacing: -2px;
+  color: #000000;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.board  .plans > .plan {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.board .plan-wrapper {
+  width: 100%;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.board .list-group-item {
+  position: relative;
+  border: none;
+}
+
+.board .list-group-item:before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: -25px;
+  width: 14px;
+  height: 12px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../img/arrow.svg");
+}
+
+.board .btn {
+  margin-top: auto;
 }
 
 
@@ -667,6 +732,12 @@ h2 {
 
   .customization .small-img {
     margin-bottom: 0;
+  }
+
+  .layouts {
+    min-height: 1600px;
+
+    background-position-y: -100px;
   }
 }
 
