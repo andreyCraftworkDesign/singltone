@@ -44,12 +44,12 @@ html {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
-
+/*
 img {
   width: 100%;
   height: auto;
 }
-
+*/
 a {
   text-decoration: none;
   -webkit-transition: all 0.2s ease-in-out;
@@ -278,10 +278,11 @@ header .navbar-toggler {
 }
 
 .promo .inner {
+  /*
   display: flex;
   align-items: center;
   justify-content: center;
-
+ */
   width: 50%;
   height: 700px;
   position: relative;
@@ -290,24 +291,42 @@ header .navbar-toggler {
 
 .inner-dark {
   background-color: #000000;
+  /*
   background-image: url("../img/promo-layout-1.png");
   background-size: 1280px 910px;
   background-position: center;
   background-position-y: -50%;
   background-repeat: no-repeat;
+  */
 }
 
 .inner-white {
   background-color: #F8F8F8;
+  /*
   background-image: url("../img/promo-layout-2.png");
   background-size: 1150px 782px;
   background-position: center;
   background-position-y: -70%;
   background-repeat: no-repeat;
+  */
 }
 
-.promo .inner img {
-  width: auto;
+.inner {
+  position: relative;
+}
+
+.inner img {
+  position: absolute;
+}
+
+.inner-dark img {
+ top: -5px;
+ left: -240px;
+}
+
+.inner-white img {
+ top: 50px;
+ left: -305px;
 }
 
 .promo .inner h3 {
@@ -318,10 +337,6 @@ header .navbar-toggler {
 
 .inner-white h3 {
   color: #000000;
-}
-
-.inner-white img {
-  margin-top: 55px;
 }
 
 .inner-dark h3 {
@@ -399,6 +414,11 @@ header .navbar-toggler {
   margin-bottom: -128px;
 }
 
+.customization img {
+  width: 100%;
+  height: auto;
+}
+
 /*layouts*/
 .layouts {
   min-height: 1820px;
@@ -406,8 +426,8 @@ header .navbar-toggler {
   background-image: url("../img/large-bg.png");
   background-repeat: no-repeat;
   overflow: hidden;
-  background-position: center;
-  background-position-y: 50px;
+  background-position-y: 60px;
+  background-position-x: -600px;
   background-color: #E8E5EF
 }
 
@@ -604,6 +624,10 @@ h1 span {
   margin-bottom: -100px;
 }
 
+.advantages .btn {
+  font-size: 17px;
+}
+
 }
 
 @media screen and (max-width: 991px) {
@@ -715,8 +739,8 @@ h2 {
 }
 
 .promo .inner h3 {
-  top: 30px;
-  left: auto;
+  top: 40px;
+  left: 40px;
 }
 
 .header-buttons .btn {
@@ -744,10 +768,6 @@ h2 {
 
 .scroll-link {
   display: none;
-}
-
-.promo .inner h3 {
-  top: 10px;
 }
 
 .advantages {
@@ -781,11 +801,6 @@ h2 {
     margin-bottom: 20px;
     font-size: 50px;
     line-height: 60px;
-  }
-
-  h3 {
-    font-size: 30px;
-    line-height: 45px;
   }
 
   .nav .nav-link {
@@ -832,18 +847,6 @@ h2 {
 
   .header-buttons .btn {
     max-width: 75px;
-  }
-
-  .advantages {
-    padding-bottom: 120px;
-  }
-
-  .customization .large-img {
-    margin-top: 0;
-  }
-
-  .customization .small-img {
-    margin-bottom: 0;
   }
 
   .layouts {
