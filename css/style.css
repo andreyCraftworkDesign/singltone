@@ -121,6 +121,7 @@ h3 {
 }
 
 h4 {
+  margin: 30px 0;
   font-family: "Poppins", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -406,9 +407,39 @@ header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.board .price span {
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.4px;
+}
+
 .board  .plans > .plan {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+}
+
+.board .first-plan {
+  position: relative;
+}
+
+.board .first-plan:after {
+  content: '';
+  position: absolute;
+  top: 25px;
+  right: 0px;
+
+  width: 1px;
+  height: 520px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../img/divider.png");
+}
+
+.board .plan {
+  min-height: 570px;
+
+  padding: 0 30px;
+  padding-bottom: 25px;
 }
 
 .board .plan-wrapper {
@@ -418,8 +449,24 @@ header {
   border-radius: 10px;
 }
 
+.board .list-group {
+  padding-top: 31px;
+}
+
 .board .list-group-item {
+  padding: 0 35px;
+  padding-bottom: 15px;
+
   position: relative;
+
+  font-family: "Poppins", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+
+  letter-spacing: -0.4px;
+  color: #000000;
   border: none;
 }
 
@@ -427,7 +474,8 @@ header {
   content: '';
   position: absolute;
   top: 8px;
-  left: -25px;
+  left: 10px;
+
   width: 14px;
   height: 12px;
   background-position: center;
@@ -437,6 +485,26 @@ header {
 
 .board .btn {
   margin-top: auto;
+  padding: 15px 28px;
+
+  font-family: "Poppins", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: -0.4px;
+  color: #9250FF;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.board .btn:hover,
+.board .btn:active {
+  background: #9250FF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #FFFFFF;
 }
 
 
