@@ -181,7 +181,7 @@ p {
 }
 
 .navbar {
-  padding: 24px 24px 0 30px;
+  padding: 30px;
 }
 
 /*Header wrapper-container*/
@@ -248,7 +248,6 @@ header .navbar-toggler:after {
   width: 15px;
   height: 2px;
   background-color: #C4C4C4;
-
 }
 
 
@@ -269,6 +268,7 @@ header .collapsed:after {
 
 .header-buttons {
   margin-top: 59px;
+  justify-content: center;
 }
 
 .header-buttons .btn {
@@ -297,7 +297,8 @@ header .collapsed:after {
 }
 
 .header-buttons .btn-orange {
-  background-color: #FF6838
+  background-color: #FF6838;
+  margin-right: 15px;
 }
 
 .header-buttons .btn-grey {
@@ -654,6 +655,7 @@ header .collapsed:after {
 
 .bonus-pack h2 {
   margin-top: 60px;
+  padding: 0 20px;
 }
 
 .bonus-pack .large-img {
@@ -688,31 +690,55 @@ header .collapsed:after {
 
 .subscribe {
   padding-top: 420px;
-  padding-bottom: 35px;
+  padding-bottom: 65px;
 }
 
 .subscribe .form-row {
   width: 100%;
+  justify-content: center;
 }
 
 .subscribe .form-control {
+  padding: 0 15px;
   width: 100%;
   max-width: 331px;
   height: 50px;
-
-  background-color: #F5F5F5;
-  border-radius: 5px;
-  border: none;
-}
-
-.subscribe .btn {
-  padding: 11px 12px 12px 12px;
 
   font-family: "Poppins", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 27px;
+  letter-spacing: -0.4px;
+
+  color: #000000;
+
+  background-color: #F5F5F5;
+  border-radius: 5px;
+  border: none;
+}
+
+.subscribe .form-control::placeholder {
+  font-family: "Poppins", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.4px;
+
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.subscribe .btn {
+  padding: 0 12px;
+  height: 50px;
+  max-width: 199px;
+
+  font-family: "Poppins", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 50px;
   text-align: center;
   letter-spacing: -0.4px;
   color: #FFFFFF;
@@ -788,6 +814,19 @@ header .collapsed:after {
   }
 }
 
+.company:nth-child(2) {
+  max-width: 215px;
+}
+
+.company:nth-child(3) {
+  max-width: 140px;
+}
+
+.company:last-child {
+  margin-left: 30px;
+  max-width: 215px;
+}
+
 .company-list {
   margin: 0;
   padding: 0;
@@ -796,7 +835,7 @@ header .collapsed:after {
 
 .company-item a {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 
   font-family: "Poppins", Arial, sans-serif;
   font-style: normal;
@@ -820,13 +859,10 @@ header .collapsed:after {
  color: #000000;
 }
 
-footer {
-  border-top: 1px solid #DFE4EA;
-}
-
-
 footer .container:first-child {
-  padding-top: 70px;
+  padding-top: 40px;
+
+  border-top: 1px solid #DFE4EA;
 }
 
 footer .col-lg-8 {
@@ -848,6 +884,7 @@ footer .col-lg-8 {
   padding: 0;
 }
 */
+/*
 .footer-right-section .col-lg-2 {
   padding-left: 10px;
 }
@@ -855,7 +892,7 @@ footer .col-lg-8 {
 .footer-right-section .col-lg-2:last-child  {
   padding-left: 35px;
 }
-
+*/
 @media screen and (max-width: 975px) {
   .footer-right-section .col-lg-4,
   .footer-right-section .col-lg-3,
@@ -919,7 +956,7 @@ footer .company-link> img {
 
 
 @media only screen and (max-width: 1199px) {
-
+ /*
   h1 {
     font-size: 91px;
     line-height: 91px;
@@ -934,11 +971,12 @@ footer .company-link> img {
    margin-top: 35px;
  }
  */
+ /*
  .header-buttons .btn {
   max-width: 150px;
   font-size: 17px;
 }
-
+*/
 .advantages strong {
   margin-top: 20px;
   padding: 0;
@@ -951,8 +989,6 @@ footer .company-link> img {
   background-position-x: -650px;
 }
 
-
-
 .customization .large-img {
   margin-top: -200px;
 }
@@ -963,36 +999,54 @@ footer .company-link> img {
 /*
 .advantages .btn {
   font-size: 17px;
-}*/
+  }*/
 
-.board .plans .content {
-  min-width: 310px;
-  min-height: 580px;
-}
+  .board .plans .content {
+    min-width: 310px;
+    min-height: 580px;
+  }
 
-.board .plans .col-lg-8 .content {
-  min-width: 315px;
-  min-height: 580px;
-}
+  .board .plans .col-lg-8 .content {
+    min-width: 315px;
+    min-height: 580px;
+  }
 
-.board .btn {
-  font-size: 18px;
-}
+  .board .btn {
+    font-size: 18px;
+  }
 
-.subscribe .large-article {
-  font-size: 42px;
-  line-height: 50px;
-}
+  .bonus-pack h2 {
+    padding: 0 100px;
+  }
 
-.subscribe {
-  padding-top: 420px;
-  padding-bottom: 70px;
-}
+  .subscribe .large-article {
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  .subscribe {
+    padding-top: 420px;
+    padding-bottom: 70px;
+  }
+
+  .company:last-child {
+    margin-left: 0;
+  }
 
 }
 
 @media screen and (max-width: 991px) {
 
+  h1 {
+    font-size: 91px;
+    line-height: 91px;
+  }
+
+  h1 span {
+    font-size: 91px;
+    line-height: 91px;
+  }
+/*
  h1 {
   font-size: 70px;
   line-height: 75px;
@@ -1022,19 +1076,21 @@ h3 {
 }
 
 .header-buttons {
-    margin-top: 45px;
+  margin-top: 45px;
 }
 
 .header-buttons .btn {
-  max-width: 105px;
-  padding: 0 7px;
-
-  font-size: 14px;
+  font-size: 17px;
 }
 
 .row-list .row-item {
-  padding: 0 40px !important;
   margin-bottom: 50px;
+}
+
+.row-list .row-item:nth-child(2) strong,
+.row-list .row-item:nth-child(4) strong,
+.row-list .row-item:nth-child(5) strong {
+  width: 150px;
 }
 
 .row-list {
@@ -1063,10 +1119,7 @@ h3 {
 
 .nav-item:last-child {
   margin-bottom: 0;
-}
-
-.navbar {
-  padding-top: 10px;
+  margin-top: 15px;
 }
 
 .navbar .nav-link {
@@ -1083,6 +1136,10 @@ header .navbar-nav {
   background-color: #FFFFFF;
   border-radius: 5px;
 
+}
+
+header .navbar-nav .nav-link-last {
+  width: 95px;
 }
 
 header .navbar-toggler {
@@ -1106,7 +1163,7 @@ header .navbar-toggler {
 }
 
 .layouts {
-    background-position-x: -700px;
+  background-position-x: -700px;
 }
 
 .board .plans {
@@ -1152,8 +1209,12 @@ header .navbar-toggler {
   border-radius: 10px;
 }
 
-.bonus-pack .large-img {
-  margin-bottom: -100px;
+.bonus-pack {
+  padding-bottom: 235px;
+}
+
+.subscribe {
+  padding-top: 360px;
 }
 
 .examples .col-lg-4 {
@@ -1164,19 +1225,25 @@ header .navbar-toggler {
   height: 100%;
 }
 
+.company:nth-child(2),
+.company:nth-child(3),
+.company:nth-child(4) {
+  max-width: 100%;
+}
+
 }
 
 @media screen and (max-width: 767px) {
 
  h1 {
-  font-size: 62px;
-  line-height: 70px;
+  font-size: 80px;
+  line-height: 80px;
 }
 
 
 h1 span {
-  font-size: 62px;
-  line-height: 70px;
+  font-size: 80px;
+  line-height: 80px;
 }
 
 h2 {
@@ -1192,9 +1259,7 @@ h2 {
 }
 
 .header-buttons .btn {
-  padding: 0 4px;
-
-  max-width: 100px;
+  padding: 0 10px;
 }
 
 
@@ -1210,7 +1275,7 @@ h2 {
 */
 
 .layouts {
-    background-position-x: -750px;
+  background-position-x: -750px;
 }
 
 .promo {
@@ -1224,10 +1289,19 @@ h2 {
   width: auto;
 }
 
+.row-list .row-item:nth-child(6) strong {
+  width: 170px;
+}
+
+.bonus-pack h2 {
+  padding: 0 40px;
+}
+
+/*
 .scroll-link {
   display: none;
 }
-
+*/
 .advantages {
   padding-bottom: 250px;
 }
@@ -1259,12 +1333,13 @@ h2 {
   padding: 0 8px;
 }
 
-.subscribe {
-  padding-top: 300px;
+.subscribe .form-control {
+  max-width: 100%;
+  margin-bottom: 20px;
 }
 
-.subscribe .form-control {
-  margin-bottom: 20px;
+.subscribe .btn {
+  max-width: 100%;
 }
 
 }
@@ -1280,7 +1355,7 @@ h2 {
 }
 
 @media screen and (max-width: 575px) {
-
+ /*
   h1 {
     font-size: 52px;
     line-height: 60px;
@@ -1294,6 +1369,16 @@ h2 {
     letter-spacing: -2.4px;
   }
 
+  strong {
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 2.6px;
+  }
+
+  */
+  .container {
+    padding: 0 20px;
+  }
 
   h2 {
     margin-top: 50px;
@@ -1343,14 +1428,14 @@ h2 {
     margin-top: 5px;
   }
   */
-
+/*
   .header-buttons .btn {
     padding: 0 4px;
     max-width: 90px;
 
     font-size: 12px;
   }
-
+  */
   .layouts {
     min-height: 1600px;
     background-position-x: -800px;
@@ -1363,6 +1448,59 @@ h2 {
 
 }
 
+@media screen and (max-width: 525px) {
+ h1 {
+  font-size: 52px;
+  line-height: 60px;
+  letter-spacing: -2.4px;
+}
+
+
+h1 span {
+  font-size: 52px;
+  line-height: 60px;
+  letter-spacing: -2.4px;
+}
+
+strong {
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 2.6px;
+}
+
+.header-container {
+  padding: 0 25px;
+}
+
+.header-buttons {
+  margin-top: 50px;
+
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-buttons .btn{
+  max-width: 100% !important;
+  height: 50px !important;
+
+  padding: 0 6px;
+  font-size: 18px;
+  line-height: 50px;
+}
+
+.header-buttons .btn:nth-child(2) {
+  margin-top: 15px;
+}
+
+.header-buttons .btn-orange {
+  margin-right: 0;
+}
+
+}
+
+
+
+/*
 @media screen and (max-width: 510px) {
 
   .header-buttons {
@@ -1386,6 +1524,8 @@ h2 {
   }
 
 }
+
+*/
 
 @media screen and (max-width: 475px) {
 
