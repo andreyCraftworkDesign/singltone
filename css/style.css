@@ -57,11 +57,15 @@ a {
   transition: all 0.2s ease-in-out;
 }
 
+strong {
+  font-weight: normal;
+}
+
 
 h1 {
   margin: 0;
   padding: 0;
-  margin-top: 0.05em;
+  margin-top: 31px;
 
   font-family: "Poppins", Arial, sans-serif;
 
@@ -151,10 +155,12 @@ p {
 
 .navbar .nav-link {
   margin-right: 15px;
-  padding: 6px 13px !important;
+  padding: 0 13px !important;
+
+  height: 36px;
 
   font-size: 16px;
-  line-height: 24px;
+  line-height: 36px;
   text-align: center;
   letter-spacing: -0.2px;
   color: rgba(255, 255, 255, 0.5) !important;
@@ -208,14 +214,61 @@ header .bg-white {
   background-color: transparent !important;
 }
 
+header .navbar-collapse {
+  z-index: 100;
+}
+
 header .navbar-toggler {
-  background-color: #F8F8F8 !important;
+  position: relative;
+  border: none;
+  outline: none;
+}
+
+header .collapsed:before,
+header .navbar-toggler:before {
+  content: '';
+  position: absolute;
+
+  top: 5px;
+  left: 5px;
+
+  width: 30px;
+  height: 2px;
+  background-color: #C4C4C4;
+}
+
+
+header .navbar-toggler:after {
+  content: '';
+  position: absolute;
+
+  top: 15px;
+  right: -5px;
+
+  width: 15px;
+  height: 2px;
+  background-color: #C4C4C4;
+
+}
+
+
+header .collapsed:after {
+  content: '';
+  position: absolute;
+
+  top: 15px;
+  left: 5px;
+
+  width: 30px;
+  height: 2px;
+  background-color: #C4C4C4;
+
 }
 
 /*header-buttons*/
 
 .header-buttons {
-  margin-top: 1.5em;
+  margin-top: 59px;
 }
 
 .header-buttons .btn {
@@ -223,14 +276,15 @@ header .navbar-toggler {
   align-items: center;
   justify-content: center;
 
-  padding: 15px 17px;
+  padding: 0 17px;
+  height: 60px;
   max-width: 176px;
 
   font-family: "Poppins", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
-  line-height: 30px;
+  line-height: 60px;
 
   text-align: center;
   letter-spacing: -0.4px;
@@ -355,6 +409,8 @@ header .navbar-toggler {
 
 .advantages strong {
  margin-top: 25px;
+ max-width: 235px;
+ padding: 0 6px;
 
  font-family: "Poppins", Arial, sans-serif;
  font-style: normal;
@@ -380,14 +436,15 @@ header .navbar-toggler {
 }
 
 .advantages .btn {
- padding: 15px 25px 15px 24px;
+ padding: 0 15px;
  margin-top: 70px;
+ height: 60px;
 
  font-family: "Poppins", Arial, sans-serif;
  font-style: normal;
  font-weight: normal;
  font-size: 20px;
- line-height: 30px;
+ line-height: 60px;
  text-align: center;
  letter-spacing: -0.4px;
  color: #FFFFFF;
@@ -525,7 +582,7 @@ header .navbar-toggler {
   content: '';
   position: absolute;
   top: 4px;
-  left: 2px;
+  left: -4px;
 
   width: 14px;
   height: 12px;
@@ -547,13 +604,14 @@ header .navbar-toggler {
 
 .board .btn {
   margin-top: auto;
-  padding: 15px 28px;
+  padding: 0 20px;
+  height: 60px;
 
   font-family: "Poppins", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
-  line-height: 30px;
+  line-height: 60px;
   text-align: center;
   letter-spacing: -0.4px;
   color: #9250FF;
@@ -572,10 +630,14 @@ header .navbar-toggler {
 /*bonus pack*/
 
 .bonus-pack {
+  padding-bottom: 165px;
+
   background-color: #000000;
 }
 
 .bonus-pack p {
+  padding: 0 40px;
+
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -595,8 +657,8 @@ header .navbar-toggler {
 }
 
 .bonus-pack .large-img {
-  margin-top: 80px;
-  margin-bottom: -260px;
+  margin-top: 70px;
+  margin-bottom: -500px;
 }
 
 .bonus-pack .col-lg-8 {
@@ -604,13 +666,17 @@ header .navbar-toggler {
 }
 
 .bonus-pack  .btn {
-  padding: 15px 24px 15px 23px;
-  margin-top: 80px;
+  padding: 0 20px;
+  margin-top: 50px;
+
+  max-width: 230px;
+  height: 60px;
+
   font-family: "Poppins", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
-  line-height: 30px;
+  line-height: 60px;
   text-align: center;
   letter-spacing: -0.4px;
   color: #FFFFFF;
@@ -621,8 +687,8 @@ header .navbar-toggler {
 /*subscribe*/
 
 .subscribe {
-  padding-top: 450px;
-  padding-bottom: 85px;
+  padding-top: 420px;
+  padding-bottom: 35px;
 }
 
 .subscribe .form-row {
@@ -631,6 +697,7 @@ header .navbar-toggler {
 
 .subscribe .form-control {
   width: 100%;
+  max-width: 331px;
   height: 50px;
 
   background-color: #F5F5F5;
@@ -679,69 +746,212 @@ header .navbar-toggler {
   color: rgba(0, 0, 0, 0.4);
 }
 
+/*examples*/
+
+.examples {
+  background-color: #CCCBCB;
+}
+
+.examples img {
+  width: 100%;
+  height: auto;
+}
+
+.examples .col-lg-4 {
+  margin-bottom: 30px;
+}
+
+.examples .col-lg-4:last-child {
+  margin-bottom: 0;
+}
+
+
+/*footer*/
+.company-descr {
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+
+  font-family: "Poppins", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.2px;
+  color: #000000;
+  mix-blend-mode: normal;
+}
+
+@media screen and (max-width: 765px) {
+  .company-descr {
+    margin-bottom: 60px;
+  }
+}
+
+.company-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.company-item a {
+  display: block;
+  margin-bottom: 20px;
+
+  font-family: "Poppins", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+
+.company-item-first a {
+ font-family: "Poppins", Arial, sans-serif;
+ font-style: normal;
+ font-weight: 500;
+ font-size: 18px;
+ line-height: 27px;
+
+ letter-spacing: -0.4px;
+ color: #000000;
+}
+
+footer {
+  border-top: 1px solid #DFE4EA;
+}
+
+
+footer .container:first-child {
+  padding-top: 70px;
+}
+
+footer .col-lg-8 {
+  margin-left: auto;
+}
+
+.footer-right-section .col-lg-4:first-child {
+  padding-left: 30px;
+}
+
+@media screen and (max-width: 975px) {
+  .footer-right-section .col-lg-4:first-child {
+    padding-left: 15px;
+  }
+}
+ /*
+.footer-right-section .col-lg-3,
+.footer-right-section .col-lg-2 {
+  padding: 0;
+}
+*/
+.footer-right-section .col-lg-2 {
+  padding-left: 10px;
+}
+
+.footer-right-section .col-lg-2:last-child  {
+  padding-left: 35px;
+}
+
+@media screen and (max-width: 975px) {
+  .footer-right-section .col-lg-4,
+  .footer-right-section .col-lg-3,
+  .footer-right-section .col-lg-2 {
+    margin-bottom: 40px;
+  }
+
+  .footer-right-section .col-lg-2 {
+    padding-left: 15px;
+  }
+
+  .footer-right-section .col-lg-2:last-child  {
+    padding-left: 15px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .footer-right-section .col-lg-2 {
+    padding-left: 0;
+  }
+}
+
+.copyright-text {
+  margin: 0;
+  margin-top: 35px;
+  margin-bottom: 30px;
+  padding: 0;
+
+  font-family: "Poppins", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.2px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 575px) {
+  .copyright-text{
+    text-align: center;
+  }
+}
+
+footer .company-link> img {
+  width: 137px;
+  height: 36px;
+}
+
+@media screen and (max-width: 575px) {
+  footer .col-sm-6 {
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  footer .col-md-4 {
+    text-align: center;
+  }
+}
+
 /*VIEWPORTS*/
 
 
-@media only screen and (max-width: 1400px) {
-
- h1 {
-
-  font-family: "Poppins", Arial, sans-serif;
-  font-size: 100px;
-  line-height: 95px;
-}
-
-h1 span {
-  font-family: "Merriweather", Arial, sans-serif;
-  font-size: 100px;
-  line-height: 95px;
-}
-
-/*
-.header-buttons {
-  margin-top: 40px;
-  }*/
-
-  .header-buttons .btn {
-    padding: 12px 9px;
-    /*max-width: 160px;*/
-  /*
-  font-size: 17px;
-  line-height: 25px;
-  */
-}
-
-}
-
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1199px) {
 
   h1 {
-    font-size: 85px;
-    line-height: 85px;
+    font-size: 91px;
+    line-height: 91px;
   }
 
   h1 span {
-    font-size: 85px;
-    line-height: 85px;
+    font-size: 91px;
+    line-height: 91px;
   }
-
-  strong {
-   font-size: 16px;
-   line-height: 25px;
+/*
+ .header-buttons {
+   margin-top: 35px;
  }
-
+ */
  .header-buttons .btn {
   max-width: 150px;
   font-size: 17px;
-  line-height: 19px;
 }
 
 .advantages strong {
   margin-top: 20px;
+  padding: 0;
 
-  font-size: 20px;
+  font-size: 21px;
   line-height: 31px;
 }
+
+.layouts {
+  background-position-x: -650px;
+}
+
+
 
 .customization .large-img {
   margin-top: -200px;
@@ -750,21 +960,22 @@ h1 span {
 .customization .small-img {
   margin-bottom: -100px;
 }
-
+/*
 .advantages .btn {
   font-size: 17px;
-}
+}*/
 
 .board .plans .content {
   min-width: 310px;
+  min-height: 580px;
 }
 
 .board .plans .col-lg-8 .content {
   min-width: 315px;
+  min-height: 580px;
 }
 
 .board .btn {
-  padding: 15px 21px;
   font-size: 18px;
 }
 
@@ -782,23 +993,22 @@ h1 span {
 
 @media screen and (max-width: 991px) {
 
-  h1 {
-    font-size: 70px;
-    line-height: 70px;
-  }
+ h1 {
+  font-size: 70px;
+  line-height: 75px;
+}
 
-
-  h1 span {
-    font-size: 70px;
-    line-height: 70px;
-  }
-
-  strong {
-   font-size: 14px;
-   line-height: 23px;
- }
-
- h2 {
+h1 span {
+  font-size: 70px;
+  line-height: 75px;
+}
+/*
+strong {
+ font-size: 14px;
+ line-height: 23px;
+}
+*/
+h2 {
   margin-top: 75px;
   margin-bottom: 25px;
 
@@ -811,12 +1021,15 @@ h3 {
   line-height: 50px;
 }
 
+.header-buttons {
+    margin-top: 45px;
+}
+
 .header-buttons .btn {
   max-width: 105px;
-  padding: 12px 7px;
+  padding: 0 7px;
 
   font-size: 14px;
-  line-height: 19px;
 }
 
 .row-list .row-item {
@@ -844,6 +1057,14 @@ h3 {
   margin-left: 0;
 }
 
+.nav-item {
+  margin-bottom: 7px;
+}
+
+.nav-item:last-child {
+  margin-bottom: 0;
+}
+
 .navbar {
   padding-top: 10px;
 }
@@ -853,15 +1074,39 @@ h3 {
 }
 
 header .navbar-nav {
-  align-items: flex-start;
+  align-items: center;
+  margin-left: auto;
+  margin-top: 20px;
+  padding: 30px;
+
+  width: 150px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+
+}
+
+header .navbar-toggler {
+  padding: 0;
+  width: 30px;
+  height: 30px;
+
+  background-color: transparent;
 }
 
 .navbar .nav-link {
   width: 110px;
-  padding: 4px 8px !important;
+  padding: 0 8px !important;
 
   font-size: 15px;
-  line-height: 21px;
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.navbar .nav-link-last {
+  color: #ffffff !important;
+}
+
+.layouts {
+    background-position-x: -700px;
 }
 
 .board .plans {
@@ -894,13 +1139,13 @@ header .navbar-nav {
 }
 
 .board .plans .col-lg-8 .content {
-  min-height: 500px;
+  min-height: 540px;
   width: 100%;
   max-width: 590px;
 }
 
 .board .plans .content {
-  min-height: 500px;
+  min-height: 540px;
   width: 100%;
   max-width: 590px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -911,21 +1156,27 @@ header .navbar-nav {
   margin-bottom: -100px;
 }
 
+.examples .col-lg-4 {
+  margin-top: 0 !important;
+}
+
+.examples img {
+  height: 100%;
+}
+
 }
 
 @media screen and (max-width: 767px) {
 
  h1 {
-  font-size: 50px;
-  line-height: 50px;
-  letter-spacing: -2px;
+  font-size: 62px;
+  line-height: 70px;
 }
 
 
 h1 span {
-  font-size: 50px;
-  line-height: 50px;
-  letter-spacing: -2px;
+  font-size: 62px;
+  line-height: 70px;
 }
 
 h2 {
@@ -941,17 +1192,27 @@ h2 {
 }
 
 .header-buttons .btn {
-  max-width: 78px;
+  padding: 0 4px;
 
-  padding: 6px;
+  max-width: 100px;
 }
 
+
+.advantages strong {
+  font-size: 20px;
+  line-height: 32px;
+}
 
 /*
 .header-buttons .btn:nth-child(2) {
   margin-top: 15px;
 }
 */
+
+.layouts {
+    background-position-x: -750px;
+}
+
 .promo {
   flex-direction: column;
 }
@@ -980,18 +1241,26 @@ h2 {
 }
 
 .board .plan {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 25px;
+  padding-left: 25px;
 
   min-height: 500px;
+}
+
+.board .plans .content {
+  min-height: 580px;
 }
 
 .board .col-lg-8 {
   padding: 0;
 }
 
+.board .btn {
+  padding: 0 8px;
+}
+
 .subscribe {
-    padding-top: 300px;
+  padding-top: 300px;
 }
 
 .subscribe .form-control {
@@ -1011,6 +1280,20 @@ h2 {
 }
 
 @media screen and (max-width: 575px) {
+
+  h1 {
+    font-size: 52px;
+    line-height: 60px;
+    letter-spacing: -2.4px;
+  }
+
+
+  h1 span {
+    font-size: 52px;
+    line-height: 60px;
+    letter-spacing: -2.4px;
+  }
+
 
   h2 {
     margin-top: 50px;
@@ -1062,13 +1345,15 @@ h2 {
   */
 
   .header-buttons .btn {
-    max-width: 75px;
+    padding: 0 4px;
+    max-width: 90px;
+
+    font-size: 12px;
   }
 
   .layouts {
     min-height: 1600px;
-
-    background-position-y: -100px;
+    background-position-x: -800px;
   }
 
   .subscribe .large-article {
@@ -1080,34 +1365,24 @@ h2 {
 
 @media screen and (max-width: 510px) {
 
-  h1 {
-    font-size: 40px;
-    line-height: 40px;
-    letter-spacing: -1px;
-  }
-
-
-  h1 span {
-    font-size: 40px;
-    line-height: 40px;
-    letter-spacing: -1px;
-  }
-
   .header-buttons {
+    margin-top: 50px;
+
     flex-direction: column;
     align-items: center;
   }
 
-  .header-buttons .btn {
+  .header-buttons .btn{
     max-width: 100% !important;
+    height: 50px !important;
 
-    padding: 6px;
-    font-size: 13px;
-    line-height: 24px;
+    padding: 0 6px;
+    font-size: 18px;
+    line-height: 50px;
   }
 
   .header-buttons .btn:nth-child(2) {
-    margin-top: 5px;
+    margin-top: 15px;
   }
 
 }
@@ -1126,11 +1401,18 @@ h2 {
     margin-top: 40px;
   }
 
+  .inner h3 {
+    padding-right: 20px;
+
+    font-size: 25px;
+    line-height: 35px;
+  }
+
 
 }
 
 @media screen and (max-width: 425px) {
-
+/*
  h1 {
   font-size: 35px;
   line-height: 35px;
@@ -1143,7 +1425,7 @@ h1 span {
   line-height: 35px;
   letter-spacing: -1px;
 }
-
+*/
 .row-list .row-item {
   padding: 0 10px !important;
 }
@@ -1153,6 +1435,10 @@ h1 span {
   line-height: 31px;
 }
 
+.advantages .btn {
+  padding: 0 5px;
+  font-size: 16px;
+}
 }
 
 @media screen and (max-width: 410px) {
