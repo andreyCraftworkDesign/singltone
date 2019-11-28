@@ -194,10 +194,19 @@ p {
   border-radius: 0;
 
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header {
@@ -224,7 +233,7 @@ header .navbar-toggler {
   outline: none;
 }
 
-header .collapsed:before,
+header .hidden:before,
 header .navbar-toggler:before {
   content: '';
   position: absolute;
@@ -251,7 +260,7 @@ header .navbar-toggler:after {
 }
 
 
-header .collapsed:after {
+header .hidden:after {
   content: '';
   position: absolute;
 
@@ -268,13 +277,21 @@ header .collapsed:after {
 
 .header-buttons {
   margin-top: 59px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header-buttons .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 
   padding: 0 17px;
   height: 60px;
@@ -557,8 +574,15 @@ header .collapsed:after {
 .board .list-group {
   padding-top: 31px;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
 }
 
@@ -650,7 +674,13 @@ header .collapsed:after {
 .bonus-pack .content {
   padding-top: 100px;
 
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+
+  -webkit-box-direction: normal;
+
+      -ms-flex-direction: column;
+
+          flex-direction: column;
 }
 
 .bonus-pack h2 {
@@ -694,7 +724,9 @@ header .collapsed:after {
 
 .subscribe .form-row {
   width: 100%;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .subscribe .form-control {
@@ -715,6 +747,50 @@ header .collapsed:after {
   background-color: #F5F5F5;
   border-radius: 5px;
   border: none;
+}
+
+.subscribe .form-control::-webkit-input-placeholder {
+  font-family: "Poppins", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.4px;
+
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.subscribe .form-control::-moz-placeholder {
+  font-family: "Poppins", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.4px;
+
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.subscribe .form-control:-ms-input-placeholder {
+  font-family: "Poppins", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.4px;
+
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.subscribe .form-control::-ms-input-placeholder {
+  font-family: "Poppins", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.4px;
+
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .subscribe .form-control::placeholder {
@@ -1212,7 +1288,9 @@ h3 {
 }
 
 header .navbar-nav {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: auto;
 
   padding: 30px;
@@ -1235,6 +1313,12 @@ header .navbar-toggler {
   background-color: transparent;
 }
 
+.header-buttons .btn {
+  height: 50px;
+
+  line-height: 50px;
+}
+
 .navbar .nav-link {
   width: 110px;
   padding: 0 8px !important;
@@ -1255,7 +1339,13 @@ header .navbar-toggler {
   margin-top: 50px;
   margin-bottom: 60px;
 
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+
+  -webkit-box-direction: normal;
+
+      -ms-flex-direction: column;
+
+          flex-direction: column;
 }
 
 .board .btn {
@@ -1272,7 +1362,10 @@ header .navbar-toggler {
 }
 
 .board .plan-wrapper {
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   border: none;
 }
 
@@ -1344,7 +1437,9 @@ header .navbar-toggler {
 }
 
 .examples .row {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 }
@@ -1395,12 +1490,19 @@ h2 {
 }
 
 .promo {
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .promo .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 
   width: auto;
 }
@@ -1460,7 +1562,7 @@ h2 {
 
 /*inner*/
 .bonus-pack h2 {
-  padding: 0 20px;
+  padding: 0 40px;
 }
 
 }
@@ -1519,7 +1621,10 @@ h2 {
   }
 
   .nav  {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 
     padding: 10px 50px;
   }
@@ -1597,8 +1702,16 @@ strong {
 .header-buttons {
   margin-top: 50px;
 
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+
+  -webkit-box-direction: normal;
+
+      -ms-flex-direction: column;
+
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header-buttons .btn{
@@ -1622,8 +1735,8 @@ strong {
 
 .inner-page h1 {
   padding: 0 10px !important;
-  font-size: 50px;
-  line-height: 65px;
+  font-size: 45px;
+  line-height: 60px;
 }
 
 }
@@ -1657,11 +1770,23 @@ strong {
 
 */
 
+@media screen and (max-width: 500px) {
+
+   h1 {
+    margin: 0 25px;
+   }
+
+
+}
+
+
 @media screen and (max-width: 475px) {
 
   h2 {
+    padding: 0 15px;
     margin-top: 40px;
     margin-bottom: 20px;
+
     font-size: 40px;
     line-height: 50px;
     letter-spacing: -2px;
@@ -1696,6 +1821,11 @@ h1 span {
   letter-spacing: -1px;
 }
 */
+
+ h1 {
+    margin: 0;
+   }
+
 .row-list .row-item {
   padding: 0 10px !important;
 }
