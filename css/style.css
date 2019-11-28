@@ -313,7 +313,7 @@ header .collapsed:after {
   width: 22px;
   height: 13px;
 
-  bottom: 20px;
+  bottom: 30px;
   left: 50%;
 
   margin-left: -11px;
@@ -655,7 +655,6 @@ header .collapsed:after {
 
 .bonus-pack h2 {
   margin-top: 60px;
-  padding: 0 20px;
 }
 
 .bonus-pack .large-img {
@@ -791,6 +790,7 @@ header .collapsed:after {
 @media screen and (max-width: 765px) {
   .company-descr {
     margin-bottom: 60px;
+    padding: 0 20px;
   }
 }
 
@@ -935,7 +935,7 @@ footer .company-link> img {
 /*INNER PAGE*/
 
 .inner-page .jumbotron {
-  padding-top: 165px !important;
+  padding-top: 175px !important;
   padding-bottom: 165px !important;
   height: auto;
 
@@ -1000,7 +1000,7 @@ footer .company-link> img {
 
 .examples .intro {
   padding-top: 60px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -1020,9 +1020,9 @@ footer .company-link> img {
 }
 
 .examples img {
-    width: 100%;
-    height: auto;
-  }
+  width: 100%;
+  height: auto;
+}
 
 
 /*VIEWPORTS*/
@@ -1114,7 +1114,7 @@ footer .company-link> img {
   }
 
   .inner-page h1 {
-    font-size: 60px;
+    font-size: 65px;
     line-height: 75px
   }
 
@@ -1315,9 +1315,7 @@ header .navbar-toggler {
 /*inner-page*/
 
 .inner-page h1 {
-  padding: 0 20px !important;
-
-  font-size: 55px;
+  font-size: 58px;
   line-height: 70px;
 }
 
@@ -1460,6 +1458,11 @@ h2 {
   max-width: 100%;
 }
 
+/*inner*/
+.bonus-pack h2 {
+  padding: 0 20px;
+}
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -1556,7 +1559,7 @@ h2 {
   */
   .layouts {
     min-height: 1600px;
-    background-position-x: -800px;
+    background-position-x: -950px;
   }
 
   .subscribe .large-article {
@@ -1568,6 +1571,7 @@ h2 {
 
 @media screen and (max-width: 525px) {
  h1 {
+
   font-size: 52px;
   line-height: 60px;
   letter-spacing: -2.4px;
@@ -1617,7 +1621,8 @@ strong {
 /*inner-page*/
 
 .inner-page h1 {
-  font-size: 45px;
+  padding: 0 10px !important;
+  font-size: 50px;
   line-height: 65px;
 }
 
