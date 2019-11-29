@@ -1130,13 +1130,16 @@ footer .company-link> img {
   /*examples*/
 
   .examples {
-    padding-bottom: 120px;
 
     background-color: #EDEDED;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+  }
+
+  .last {
+    padding-bottom: 120px;
   }
 
 /*
@@ -1317,9 +1320,11 @@ footer .company-link> img {
   }
 
   /*inner-page*/
+
+  /*
   .examples {
     padding-bottom: 60px;
-  }
+  }*/
 
   .examples img {
     width: 100%;
@@ -1572,11 +1577,11 @@ header .navbar-toggler {
   font-size: 58px;
   line-height: 70px;
 }
-
+ /*
 .examples {
   padding-bottom: 60px;
 }
-
+*/
 .examples .col-lg-4:nth-child(5) {
  margin-top: 0;
 }
@@ -1914,6 +1919,10 @@ h2 {
 
   font-size: 30px;
   line-height: 40px;
+}
+
+.last {
+  padding-bottom: 50px;
 }
 
 }
