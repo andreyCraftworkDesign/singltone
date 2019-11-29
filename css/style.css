@@ -1762,9 +1762,9 @@ h2 {
 
 /*illustrations*/
 
-.previews p {
-  font-size: 26px;
-  line-height: 44px;
+.previews {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 }
@@ -1910,7 +1910,9 @@ h2 {
 
   .previews p {
 
-  font-size: 24px;
+    margin-left: 10px;
+
+  font-size: 30px;
   line-height: 40px;
 }
 
