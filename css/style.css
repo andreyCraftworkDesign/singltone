@@ -1336,10 +1336,6 @@ footer .company-link> img {
     line-height: 75px
   }
 
-  .grid {
-    max-height: 840px;
-  }
-
   /*illustrations*/
 
   .previews p {
@@ -1602,34 +1598,18 @@ header .navbar-toggler {
   margin-bottom: 0 !important;
 }
 
+.examples .intro {
+    padding-top: 30px;
+}
+
 .grid {
   -webkit-column-count: 2 !important;
   -moz-column-count: 2 !important;
   column-count: 2 !important;
-  max-height: 1100px;
 }
 
-.hero-headers-block .column-1 {
-  outline: 2px solid red;
-  order: 1;
-}
-
-.hero-headers-block .column-2 {
-  max-width: 100%;
-  display: flex;
-  flex: auto;
-  flex-wrap: wrap;
-  outline: 2px solid green;
-  order: 2;
-}
-
-.hero-headers-block .column-2 img {
-  width: 50%;
-}
-
-.hero-headers-block .column-3 {
-  outline: 2px solid orange;
-  order: -1;
+.grid-item {
+    display: inherit !important;
 }
 
 }
@@ -1759,10 +1739,6 @@ h2 {
 /*inner*/
 .bonus-pack h2 {
   padding: 0 40px;
-}
-
-.grid {
-  max-height: 840px;
 }
 
 /*illustrations*/
@@ -2144,4 +2120,11 @@ strong {
 .grid-item img {
   width: 100%;
   margin-bottom: 30px;
+
+  border-radius: 5px;
 }
+
+
+
+
+
