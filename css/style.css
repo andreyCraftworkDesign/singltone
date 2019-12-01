@@ -256,11 +256,12 @@ header .navbar-toggler:before {
   position: absolute;
 
   top: 5px;
-  left: 5px;
+  right: 0;
 
-  width: 30px;
+  width: 15px;
   height: 2px;
   background-color: #ffffff;
+  transform: scale(2, 1);
 }
 
 
@@ -269,7 +270,7 @@ header .navbar-toggler:after {
   position: absolute;
 
   top: 15px;
-  right: -5px;
+  right: -7px;
 
   width: 15px;
   height: 2px;
@@ -277,6 +278,7 @@ header .navbar-toggler:after {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  transform: scale(1, 1);
 }
 
 
@@ -285,11 +287,12 @@ header .hidden:after {
   position: absolute;
 
   top: 15px;
-  left: 5px;
+  right: 0px;
 
-  width: 30px;
+  width: 15px;
   height: 2px;
   background-color: #ffffff;
+  transform: scale(2, 1);
 }
 
 /*header-buttons*/
@@ -1324,38 +1327,38 @@ footer .company-link> img {
   /*
   .examples {
     padding-bottom: 60px;
-  }*/
+    }*/
 
-  .examples img {
-    width: 100%;
-    height: auto;
+    .examples img {
+      width: 100%;
+      height: auto;
+    }
+
+    .inner-page h1 {
+      font-size: 65px;
+      line-height: 75px
+    }
+
+    /*illustrations*/
+
+    .previews p {
+      font-size: 30px;
+      line-height: 44px;
+    }
+
   }
 
-  .inner-page h1 {
-    font-size: 65px;
-    line-height: 75px
-  }
+  @media screen and (max-width: 991px) {
 
-  /*illustrations*/
+    h1 {
+      font-size: 91px;
+      line-height: 91px;
+    }
 
-  .previews p {
-    font-size: 30px;
-    line-height: 44px;
-  }
-
-}
-
-@media screen and (max-width: 991px) {
-
-  h1 {
-    font-size: 91px;
-    line-height: 91px;
-  }
-
-  h1 span {
-    font-size: 91px;
-    line-height: 91px;
-  }
+    h1 span {
+      font-size: 91px;
+      line-height: 91px;
+    }
 /*
  h1 {
   font-size: 70px;
@@ -1474,6 +1477,10 @@ header .navbar-toggler {
 
   font-size: 15px;
   color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.navbar {
+  padding-right: 35px;
 }
 
 .navbar .nav-link:hover,
@@ -1599,7 +1606,7 @@ header .navbar-toggler {
 }
 
 .examples .intro {
-    padding-top: 30px;
+  padding-top: 30px;
 }
 
 .grid {
@@ -1609,7 +1616,7 @@ header .navbar-toggler {
 }
 
 .grid-item {
-    display: inherit !important;
+  display: inherit !important;
 }
 
 }
@@ -1893,13 +1900,13 @@ h2 {
 
     margin-left: 10px;
 
-  font-size: 30px;
-  line-height: 40px;
-}
+    font-size: 30px;
+    line-height: 40px;
+  }
 
-.last {
-  padding-bottom: 50px;
-}
+  .last {
+    padding-bottom: 50px;
+  }
 
 }
 
